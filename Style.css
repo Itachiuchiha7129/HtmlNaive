@@ -121,6 +121,8 @@ nav button {
   border-radius: 6px;
   border-color: black;
   border-width: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 /*feature1*/
@@ -262,6 +264,8 @@ nav button {
   margin-bottom: 1px;
   cursor: pointer;
   position: relative;
+  /* transition-property: unset; */
+  transition: all;
 }
 
 input[type="radio"] {
@@ -283,10 +287,17 @@ input[type="radio"] {
 }
 
 .email-signup2 input {
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   background-color: transparent;
-  border: 1px solid white ;
+  border: 2px solid white;
   width: 70%;
+  flex: 1;
+  outline: 0;
+  margin-left: 20px;
+  opacity: 0.6;
+  padding: 5px;
+  color: whitesmoke;
 }
 
 /* .email-signup2 button {
@@ -306,6 +317,7 @@ input[type="radio"] {
   border-radius: 5px;
   color: whitesmoke;
 }
+
 label::after {
   content: "+";
   font-size: 34px;
@@ -363,9 +375,8 @@ label::after {
     margin-top: 20px;
     margin-bottom: 15px;
   }
-  
-  .form-btn {
 
+  .form-btn {
   }
 
   .email-signup input {
@@ -376,34 +387,35 @@ label::after {
   .feature1 {
     text-align: center;
   }
-  .img-col1 img {
-    width: 130%;
-    margin-left: 50px;
+  .img-col1,
+  .img-col2,
+  .img-col3,
+  .img-col4 {
+    flex-basis: 100%;
+    margin-bottom: 50px;
   }
-  .text-col1 {
-    margin-left: 65px;
-  }
-  .img-col2 img {
-    width: 120%;
-    margin-left: 55px;
-  }
-  .text-col2 {
-    margin-left: 30px;
-  }
-  .img-col3 img {
-    width: 150px;
-    margin-left: 55px;
-  }
-  .text-col3 {
-    margin-left: 40px;
-  }
-  .img-col4 img {
-    width: 150px;
-    margin-left: 55px;
-  }
+
+  .text-col1,
+  .text-col2,
+  .text-col3,
   .text-col4 {
-    margin-left: 60px;
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 18px;
   }
+
+  .email-signup2 input {
+    width: 200px;
+    margin-left: 2px;
+  }
+
+  .email-signup button {
+    font-size: 16px;
+    cursor: pointer;
+    padding: 4px 20px;
+  }
+
   .faq h2 {
     font-size: 20px;
     margin-bottom: -15px;
